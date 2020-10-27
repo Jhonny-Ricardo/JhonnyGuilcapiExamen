@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JhonnyGuilcapiExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+      <Label x:Name="IblUser" Text="Usuario conectado:  "></Label>
+      <Label  Text="Ingrese los campos"/>
+            <Grid Margin="20,40,20,20" Padding="30,30,30,30" RowSpacing="5" ColumnSpacing="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Solicitar Nombre"></Label>
+                <Label Grid.Row="1" Grid.Column="0" Text="Monto Inicial"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Pago Mensual"/>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="Nombre"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="monto"></Entry>
+            </Grid>
+            <Button x:Name="btnCalcular"
+                Text="Calcular"
+                Clicked="btnCalcular_Clicked">
+            </Button>    
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
